@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <label for="query">Ingrese la opinion:</label>
+    <input type="text" id="query" name="query" required>
+    <button type="submit">Clasificar</button>
+</form>
+{% endblock %}
